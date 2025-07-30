@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS: Pseudo-classes & Pseudo-elements</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>CSS: Pseudo-classes & Pseudo-elements</h1>
+  <p>Learn how to use pseudo-classes and pseudo-elements to style specific parts of elements.</p>
+</header>
+<main>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="css-intro.html">CSS: Introduction</a></li>
+      <li><a href="css-selectors.html">CSS: Selectors</a></li>
+      <li><a href="css-properties.html">CSS: Properties</a></li>
+      <li><a href="css-colors-units.html">CSS: Colors & Units</a></li>
+      <li><a href="css-box-model.html">CSS: Box Model</a></li>
+      <li><a href="css-text.html">CSS: Text Styling</a></li>
+      <li><a href="css-backgrounds.html">CSS: Backgrounds</a></li>
+      <li><a href="css-borders.html">CSS: Borders & Border Radius</a></li>
+      <li><a href="css-layout.html">CSS: Layout</a></li>
+      <li><a href="css-display-position.html">CSS: Display & Positioning</a></li>
+      <li><a href="css-responsive.html">CSS: Responsive Design</a></li>
+      <li><a href="css-transitions.html">CSS: Transitions & Animations</a></li>
+      <li><a href="css-pseudo.html">CSS: Pseudo-classes & Pseudo-elements</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h2>Pseudo-classes</h2>
+    <p>Pseudo-classes allow you to style elements based on their state or position:</p>
+    <ul>
+      <li><strong>:hover:</strong> Styles an element when the mouse hovers over it.</li>
+      <li><strong>:focus:</strong> Styles an element when it gains focus.</li>
+      <li><strong>:nth-child(n):</strong> Styles elements based on their position in a parent.</li>
+      <li><strong>:first-child:</strong> Styles the first child of a parent.</li>
+      <li><strong>:last-child:</strong> Styles the last child of a parent.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Pseudo-elements</h2>
+    <p>Pseudo-elements allow you to style specific parts of an element:</p>
+    <ul>
+      <li><strong>::before:</strong> Inserts content before an element.</li>
+      <li><strong>::after:</strong> Inserts content after an element.</li>
+      <li><strong>::first-letter:</strong> Styles the first letter of an element.</li>
+      <li><strong>::first-line:</strong> Styles the first line of an element.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Example: Pseudo-classes & Pseudo-elements</h2>
+    <pre>
+/* Example */
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+p::first-line {
+    font-weight: bold;
+    color: blue;
+}
+        </pre>
+    <p>This example changes the color and style of links on hover and styles the first line of a paragraph.</p>
+  </section>
+  <section>
+    <h2>Practice</h2>
+    <p>Try experimenting with pseudo-classes and pseudo-elements:</p>
+    <ul>
+      <li>Use <code>:nth-child()</code> to style specific list items.</li>
+      <li>Combine <code>::before</code> and <code>::after</code> for decorative effects.</li>
+      <li>Style form elements using <code>:focus</code>.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Continue Learning</h2>
+    <ul>
+      <li><a href="index.html">Back to Home</a></li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2025 Intro to HTML &amp; CSS by Md Ahbab Hamid Khan</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Working with Links - Intro to HTML & CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Site Header -->
+<header>
+    <h1>Working with Links</h1>
+    <p>
+        Hi, I'm Ahbab. In this article, I'll teach you how to create links in HTML, including internal, external, and anchor links, along with best practices for accessibility.
+    </p>
+</header>
+
+<main>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lists.html">Lists</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="sections.html">Sections</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="forms.html">Forms</a></li>
+            <li><a href="tables.html">Tables</a></li>
+            <li><a href="links.html">Links</a></li>
+        </ul>
+    </nav>
+
+    <!-- Introduction to Links -->
+    <article>
+        <h2>What is the &lt;a&gt; Element?</h2>
+        <p>
+            The <code>&lt;a&gt;</code> element is used to create hyperlinks in HTML. It requires the <code>href</code> attribute to specify the link's destination.
+        </p>
+    </article>
+
+    <!-- Example: Internal Link -->
+    <section>
+        <h2>Example: Internal Link</h2>
+        <pre>
+&lt;a href="about.html"&gt;About Us&lt;/a&gt;
+        </pre>
+        <p>
+            This example creates a link to another page within the same website.
+        </p>
+    </section>
+
+    <!-- Example: External Link -->
+    <section>
+        <h2>Example: External Link</h2>
+        <pre>
+&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example&lt;/a&gt;
+        </pre>
+        <p>
+            This example creates a link to an external website and opens it in a new tab using the <code>target="_blank"</code> attribute.
+        </p>
+    </section>
+
+    <!-- Example: Anchor Link -->
+    <section>
+        <h2>Example: Anchor Link</h2>
+        <pre>
+&lt;a href="#section1"&gt;Go to Section 1&lt;/a&gt;
+
+&lt;section id="section1"&gt;
+    &lt;h2&gt;Section 1&lt;/h2&gt;
+    &lt;p&gt;This is Section 1.&lt;/p&gt;
+&lt;/section&gt;
+        </pre>
+        <p>
+            This example creates a link that jumps to a specific section within the same page using an ID.
+        </p>
+    </section>
+
+    <!-- Best Practices -->
+    <section>
+        <h2>Best Practices for Links</h2>
+        <ul>
+            <li>Use descriptive text for links to improve accessibility.</li>
+            <li>Ensure links are visually distinguishable (e.g., underlined).</li>
+            <li>Test links to ensure they work correctly.</li>
+            <li>Use <code>rel="noopener noreferrer"</code> with <code>target="_blank"</code> for security.</li>
+        </ul>
+    </section>
+
+    <!-- Practice Ideas -->
+    <section>
+        <h2>Practice: Try It Yourself</h2>
+        <ol>
+            <li>
+                <strong>Project: Navigation Bar</strong><br>
+                Create a navigation bar with links to different pages of a website. Style the links using CSS.
+            </li>
+            <li>
+                <strong>Project: Resource Page</strong><br>
+                Build a page with links to external resources, such as articles, tutorials, and tools.
+            </li>
+        </ol>
+    </section>
+
+    <!-- Link to Next Content -->
+    <section>
+        <h2>Continue Learning</h2>
+        <ul>
+            <li><a href="index.html">Back to Home</a></li>
+        </ul>
+    </section>
+</main>
+
+<!-- Site Footer -->
+<footer>
+    <p>&copy; 2025 Intro to HTML &amp; CSS by Md Ahbab Hamid Khan</p>
+</footer>
+</body>
+</html>

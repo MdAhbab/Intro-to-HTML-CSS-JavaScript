@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creating Forms in HTML - Intro to HTML & CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Site Header -->
+<header>
+    <h1>Creating Forms in HTML</h1>
+    <p>
+        Hi, I'm Ahbab. In this article, I'll teach you how to create forms in HTML, including input fields, buttons, and best practices for designing user-friendly forms.
+    </p>
+</header>
+
+<main>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lists.html">Lists</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="sections.html">Sections</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="forms.html">Forms</a></li>
+            <li><a href="tables.html">Tables</a></li>
+            <li><a href="links.html">Links</a></li>
+        </ul>
+    </nav>
+
+    <!-- Introduction to Forms -->
+    <article>
+        <h2>What is the &lt;form&gt; Element?</h2>
+        <p>
+            The <code>&lt;form&gt;</code> element is used to collect user input. It can include various input types, such as text fields, checkboxes, radio buttons, and submit buttons.
+        </p>
+    </article>
+
+    <!-- Example: Basic Form -->
+    <section>
+        <h2>Example: Basic Form</h2>
+        <pre>
+&lt;form action="/submit" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name" required&gt;
+    &lt;br&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" required&gt;
+    &lt;br&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+        </pre>
+        <p>
+            This example demonstrates a simple form with text and email input fields, along with a submit button.
+        </p>
+    </section>
+
+    <!-- Input Types -->
+    <section>
+        <h2>Common Input Types</h2>
+        <ul>
+            <li><code>text</code>: Single-line text input</li>
+            <li><code>email</code>: Email input</li>
+            <li><code>password</code>: Password input</li>
+            <li><code>checkbox</code>: Checkbox input</li>
+            <li><code>radio</code>: Radio button input</li>
+            <li><code>submit</code>: Submit button</li>
+        </ul>
+    </section>
+
+    <!-- Example: Advanced Form -->
+    <section>
+        <h2>Example: Advanced Form</h2>
+        <pre>
+&lt;form action="/register" method="post"&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Registration Form&lt;/legend&gt;
+        &lt;label for="username"&gt;Username:&lt;/label&gt;
+        &lt;input type="text" id="username" name="username" required&gt;
+        &lt;br&gt;
+        &lt;label for="password"&gt;Password:&lt;/label&gt;
+        &lt;input type="password" id="password" name="password" required&gt;
+        &lt;br&gt;
+        &lt;label&gt;Gender:&lt;/label&gt;
+        &lt;input type="radio" id="male" name="gender" value="male"&gt;
+        &lt;label for="male"&gt;Male&lt;/label&gt;
+        &lt;input type="radio" id="female" name="gender" value="female"&gt;
+        &lt;label for="female"&gt;Female&lt;/label&gt;
+        &lt;br&gt;
+        &lt;label for="terms"&gt;Accept Terms:&lt;/label&gt;
+        &lt;input type="checkbox" id="terms" name="terms" required&gt;
+        &lt;br&gt;
+        &lt;button type="submit"&gt;Register&lt;/button&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+        </pre>
+        <p>
+            This example includes a registration form with text, password, radio buttons, and a checkbox.
+        </p>
+    </section>
+
+    <!-- Best Practices -->
+    <section>
+        <h2>Best Practices for Forms</h2>
+        <ul>
+            <li>Use <code>label</code> elements for accessibility.</li>
+            <li>Validate user input using the <code>required</code> attribute.</li>
+            <li>Group related inputs using <code>fieldset</code> and <code>legend</code>.</li>
+            <li>Provide clear instructions and error messages.</li>
+        </ul>
+    </section>
+
+    <!-- Practice Ideas -->
+    <section>
+        <h2>Practice: Try It Yourself</h2>
+        <ol>
+            <li>
+                <strong>Project: Contact Form</strong><br>
+                Create a contact form with fields for name, email, subject, and message. Add a submit button.
+            </li>
+            <li>
+                <strong>Project: Survey Form</strong><br>
+                Build a survey form with multiple-choice questions using radio buttons and checkboxes.
+            </li>
+        </ol>
+    </section>
+
+    <!-- Link to Next Content -->
+    <section>
+        <h2>Continue Learning</h2>
+        <ul>
+            <li><a href="tables.html">Next: Building Tables</a></li>
+            <li><a href="images.html">Previous: Adding Images to Your Page</a></li>
+        </ul>
+    </section>
+</main>
+
+<!-- Site Footer -->
+<footer>
+    <p>&copy; 2025 Intro to HTML &amp; CSS by Md Ahbab Hamid Khan</p>
+</footer>
+</body>
+</html>

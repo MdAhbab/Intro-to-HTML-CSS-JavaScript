@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS: Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>CSS: Layout</h1>
+    <p>Learn how to structure and position elements using CSS layout techniques.</p>
+</header>
+<main>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="css-intro.html">CSS: Introduction</a></li>
+            <li><a href="css-selectors.html">CSS: Selectors</a></li>
+            <li><a href="css-properties.html">CSS: Properties</a></li>
+            <li><a href="css-colors-units.html">CSS: Colors & Units</a></li>
+            <li><a href="css-box-model.html">CSS: Box Model</a></li>
+            <li><a href="css-text.html">CSS: Text Styling</a></li>
+            <li><a href="css-backgrounds.html">CSS: Backgrounds</a></li>
+            <li><a href="css-borders.html">CSS: Borders & Border Radius</a></li>
+            <li><a href="css-layout.html">CSS: Layout</a></li>
+            <li><a href="css-display-position.html">CSS: Display & Positioning</a></li>
+            <li><a href="css-responsive.html">CSS: Responsive Design</a></li>
+            <li><a href="css-transitions.html">CSS: Transitions & Animations</a></li>
+            <li><a href="css-pseudo.html">CSS: Pseudo-classes & Pseudo-elements</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>CSS Layout Techniques</h2>
+        <p>CSS provides various techniques to create layouts:</p>
+        <ul>
+            <li><strong>Flexbox:</strong> A one-dimensional layout method for aligning items in rows or columns.</li>
+            <li><strong>Grid:</strong> A two-dimensional layout system for creating complex designs.</li>
+            <li><strong>Float:</strong> Positions elements to the left or right within their container.</li>
+            <li><strong>Position:</strong> Allows precise placement of elements using <code>absolute</code>, <code>relative</code>, <code>fixed</code>, or <code>sticky</code>.</li>
+            <li><strong>Inline-block:</strong> Combines inline and block-level behavior for elements.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Example: Flexbox Layout</h2>
+        <pre>
+/* Example */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item {
+    flex: 1;
+    margin: 10px;
+}
+        </pre>
+        <p>This example creates a flexible layout with evenly spaced items.</p>
+    </section>
+    <section>
+        <h2>Example: Grid Layout</h2>
+        <pre>
+/* Example */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+        </pre>
+        <p>This example creates a grid layout with three equal columns and spacing between items.</p>
+    </section>
+    <section>
+        <h2>Practice</h2>
+        <p>Try experimenting with layout techniques:</p>
+        <ul>
+            <li>Use <code>flexbox</code> to align items vertically and horizontally.</li>
+            <li>Create a responsive grid layout using <code>grid-template-columns</code>.</li>
+            <li>Combine <code>position</code> and <code>float</code> for custom designs.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Continue Learning</h2>
+        <ul>
+            <li><a href="css-display-position.html">Next: CSS Display & Positioning</a></li>
+        </ul>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2025 Intro to HTML &amp; CSS by Md Ahbab Hamid Khan</p>
+</footer>
+</body>
+</html>

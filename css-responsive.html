@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS: Responsive Design</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>CSS: Responsive Design</h1>
+  <p>Learn how to create web pages that adapt to different screen sizes and devices.</p>
+</header>
+<main>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="css-intro.html">CSS: Introduction</a></li>
+      <li><a href="css-selectors.html">CSS: Selectors</a></li>
+      <li><a href="css-properties.html">CSS: Properties</a></li>
+      <li><a href="css-colors-units.html">CSS: Colors & Units</a></li>
+      <li><a href="css-box-model.html">CSS: Box Model</a></li>
+      <li><a href="css-text.html">CSS: Text Styling</a></li>
+      <li><a href="css-backgrounds.html">CSS: Backgrounds</a></li>
+      <li><a href="css-borders.html">CSS: Borders & Border Radius</a></li>
+      <li><a href="css-layout.html">CSS: Layout</a></li>
+      <li><a href="css-display-position.html">CSS: Display & Positioning</a></li>
+      <li><a href="css-responsive.html">CSS: Responsive Design</a></li>
+      <li><a href="css-transitions.html">CSS: Transitions & Animations</a></li>
+      <li><a href="css-pseudo.html">CSS: Pseudo-classes & Pseudo-elements</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h2>Responsive Design Techniques</h2>
+    <p>CSS provides several techniques to make web pages responsive:</p>
+    <ul>
+      <li><strong>Media Queries:</strong> Apply styles based on screen size or device type.</li>
+      <li><strong>Flexible Layouts:</strong> Use percentages or relative units for widths and heights.</li>
+      <li><strong>Viewport Meta Tag:</strong> Control the viewport's size and scaling.</li>
+      <li><strong>Responsive Images:</strong> Use <code>max-width</code> and <code>height: auto</code> for images.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Example: Media Queries</h2>
+    <pre>
+/* Example */
+body {
+    font-size: 16px;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+}
+        </pre>
+    <p>This example adjusts the font size based on screen width.</p>
+  </section>
+  <section>
+    <h2>Example: Responsive Images</h2>
+    <pre>
+/* Example */
+img {
+    max-width: 100%;
+    height: auto;
+}
+        </pre>
+    <p>This example ensures images scale proportionally within their container.</p>
+  </section>
+  <section>
+    <h2>Practice</h2>
+    <p>Try experimenting with responsive design techniques:</p>
+    <ul>
+      <li>Use media queries to adjust layouts for different screen sizes.</li>
+      <li>Apply flexible units like <code>em</code>, <code>rem</code>, or percentages.</li>
+      <li>Test your designs on various devices and resolutions.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Continue Learning</h2>
+    <ul>
+      <li><a href="css-transitions.html">Next: CSS Transitions & Animations</a></li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2025 Intro to HTML &amp; CSS by Md Ahbab Hamid Khan</p>
+</footer>
+</body>
+</html>
