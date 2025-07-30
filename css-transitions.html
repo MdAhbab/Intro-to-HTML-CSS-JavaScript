@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CSS: Transitions & Animations</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>CSS: Transitions & Animations</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
-  <h1>CSS: Transitions & Animations</h1>
-  <p>Learn how to create smooth transitions and animations using CSS.</p>
+    <h1>CSS: Transitions & Animations</h1>
+    <p>Learn how to create smooth transitions and animations using CSS.</p>
 </header>
 <main>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="css-intro.html">CSS: Introduction</a></li>
-      <li><a href="css-selectors.html">CSS: Selectors</a></li>
-      <li><a href="css-properties.html">CSS: Properties</a></li>
-      <li><a href="css-colors-units.html">CSS: Colors & Units</a></li>
-      <li><a href="css-box-model.html">CSS: Box Model</a></li>
-      <li><a href="css-text.html">CSS: Text Styling</a></li>
-      <li><a href="css-backgrounds.html">CSS: Backgrounds</a></li>
-      <li><a href="css-borders.html">CSS: Borders & Border Radius</a></li>
-      <li><a href="css-layout.html">CSS: Layout</a></li>
-      <li><a href="css-display-position.html">CSS: Display & Positioning</a></li>
-      <li><a href="css-responsive.html">CSS: Responsive Design</a></li>
-      <li><a href="css-transitions.html">CSS: Transitions & Animations</a></li>
-      <li><a href="css-pseudo.html">CSS: Pseudo-classes & Pseudo-elements</a></li>
-    </ul>
-  </nav>
-  <section>
-    <h2>CSS Transitions</h2>
-    <p>CSS transitions allow you to change property values smoothly over a specified duration:</p>
-    <ul>
-      <li><strong>transition-property:</strong> Specifies the property to transition (e.g., <code>background-color</code>, <code>transform</code>).</li>
-      <li><strong>transition-duration:</strong> Defines the duration of the transition (e.g., <code>0.5s</code>, <code>2s</code>).</li>
-      <li><strong>transition-timing-function:</strong> Specifies the speed curve of the transition (e.g., <code>ease</code>, <code>linear</code>, <code>ease-in</code>, <code>ease-out</code>, <code>ease-in-out</code>).</li>
-      <li><strong>transition-delay:</strong> Adds a delay before the transition starts.</li>
-      <li><strong>transition:</strong> A shorthand property for all transition values.</li>
-    </ul>
-  </section>
-  <section>
-    <h2>Example: CSS Transition</h2>
-    <pre>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="css-intro.html">CSS: Introduction</a></li>
+            <li><a href="css-selectors.html">CSS: Selectors</a></li>
+            <li><a href="css-properties.html">CSS: Properties</a></li>
+            <li><a href="css-colors-units.html">CSS: Colors & Units</a></li>
+            <li><a href="css-box-model.html">CSS: Box Model</a></li>
+            <li><a href="css-text.html">CSS: Text Styling</a></li>
+            <li><a href="css-backgrounds.html">CSS: Backgrounds</a></li>
+            <li><a href="css-borders.html">CSS: Borders & Border Radius</a></li>
+            <li><a href="css-layout.html">CSS: Layout</a></li>
+            <li><a href="css-display-position.html">CSS: Display & Positioning</a></li>
+            <li><a href="css-responsive.html">CSS: Responsive Design</a></li>
+            <li><a href="css-transitions.html">CSS: Transitions & Animations</a></li>
+            <li><a href="css-pseudo.html">CSS: Pseudo-classes & Pseudo-elements</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>CSS Transitions</h2>
+        <p>CSS transitions allow you to change property values smoothly over a specified duration:</p>
+        <ul>
+            <li><strong>transition-property:</strong> Specifies the property to transition (e.g.,
+                <code>background-color</code>, <code>transform</code>).
+            </li>
+            <li><strong>transition-duration:</strong> Defines the duration of the transition (e.g., <code>0.5s</code>,
+                <code>2s</code>).
+            </li>
+            <li><strong>transition-timing-function:</strong> Specifies the speed curve of the transition (e.g., <code>ease</code>,
+                <code>linear</code>, <code>ease-in</code>, <code>ease-out</code>, <code>ease-in-out</code>).
+            </li>
+            <li><strong>transition-delay:</strong> Adds a delay before the transition starts.</li>
+            <li><strong>transition:</strong> A shorthand property for all transition values.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Example: CSS Transition</h2>
+        <pre>
 /* Example */
 button {
     background-color: #007BFF;
@@ -56,25 +62,29 @@ button:hover {
     background-color: #0056b3;
 }
         </pre>
-    <p>This example creates a button with a smooth color transition on hover.</p>
-  </section>
-  <section>
-    <h2>CSS Animations</h2>
-    <p>CSS animations allow you to define keyframes for more complex animations:</p>
-    <ul>
-      <li><strong>@keyframes:</strong> Defines the animation's keyframes.</li>
-      <li><strong>animation-name:</strong> Specifies the name of the animation.</li>
-      <li><strong>animation-duration:</strong> Sets the duration of the animation.</li>
-      <li><strong>animation-timing-function:</strong> Specifies the speed curve of the animation.</li>
-      <li><strong>animation-delay:</strong> Adds a delay before the animation starts.</li>
-      <li><strong>animation-iteration-count:</strong> Specifies the number of times the animation should run (e.g., <code>infinite</code>, <code>1</code>, <code>3</code>).</li>
-      <li><strong>animation-direction:</strong> Defines the direction of the animation (e.g., <code>normal</code>, <code>reverse</code>, <code>alternate</code>, <code>alternate-reverse</code>).</li>
-      <li><strong>animation:</strong> A shorthand property for all animation values.</li>
-    </ul>
-  </section>
-  <section>
-    <h2>Example: CSS Animation</h2>
-    <pre>
+        <p>This example creates a button with a smooth color transition on hover.</p>
+    </section>
+    <section>
+        <h2>CSS Animations</h2>
+        <p>CSS animations allow you to define keyframes for more complex animations:</p>
+        <ul>
+            <li><strong>@keyframes:</strong> Defines the animation's keyframes.</li>
+            <li><strong>animation-name:</strong> Specifies the name of the animation.</li>
+            <li><strong>animation-duration:</strong> Sets the duration of the animation.</li>
+            <li><strong>animation-timing-function:</strong> Specifies the speed curve of the animation.</li>
+            <li><strong>animation-delay:</strong> Adds a delay before the animation starts.</li>
+            <li><strong>animation-iteration-count:</strong> Specifies the number of times the animation should run
+                (e.g., <code>infinite</code>, <code>1</code>, <code>3</code>).
+            </li>
+            <li><strong>animation-direction:</strong> Defines the direction of the animation (e.g., <code>normal</code>,
+                <code>reverse</code>, <code>alternate</code>, <code>alternate-reverse</code>).
+            </li>
+            <li><strong>animation:</strong> A shorthand property for all animation values.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Example: CSS Animation</h2>
+        <pre>
 /* Example */
 @keyframes fadeIn {
     from {
@@ -88,26 +98,26 @@ div {
     animation: fadeIn 2s ease-in-out;
 }
         </pre>
-    <p>This example creates a fade-in effect for a <code>div</code> element.</p>
-  </section>
-  <section>
-    <h2>Practice</h2>
-    <p>Try experimenting with transitions and animations:</p>
-    <ul>
-      <li>Use <code>transition</code> to create hover effects for links.</li>
-      <li>Create a bouncing animation using <code>@keyframes</code>.</li>
-      <li>Combine multiple animations for complex effects.</li>
-    </ul>
-  </section>
-  <section>
-    <h2>Continue Learning</h2>
-    <ul>
-      <li><a href="css-pseudo.html">Next: CSS Pseudo-classes & Pseudo-elements</a></li>
-    </ul>
-  </section>
+        <p>This example creates a fade-in effect for a <code>div</code> element.</p>
+    </section>
+    <section>
+        <h2>Practice</h2>
+        <p>Try experimenting with transitions and animations:</p>
+        <ul>
+            <li>Use <code>transition</code> to create hover effects for links.</li>
+            <li>Create a bouncing animation using <code>@keyframes</code>.</li>
+            <li>Combine multiple animations for complex effects.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Continue Learning</h2>
+        <ul>
+            <li><a href="css-pseudo.html">Next: CSS Pseudo-classes & Pseudo-elements</a></li>
+        </ul>
+    </section>
 </main>
 <footer>
-  <p>&copy; 2025 Intro to HTML &amp; CSS by Md Ahbab Hamid Khan</p>
+    <p>&copy; 2025 Intro to HTML &amp; CSS by Md Ahbab Hamid Khan</p>
 </footer>
 </body>
 </html>

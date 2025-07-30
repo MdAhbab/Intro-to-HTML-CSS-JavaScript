@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CSS: Box Model</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>CSS: Box Model</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
-  <h1>CSS: Box Model</h1>
-  <p>Learn how the CSS box model works and how to style elements effectively.</p>
+    <h1>CSS: Box Model</h1>
+    <p>Learn how the CSS box model works and how to style elements effectively.</p>
 </header>
 <main>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="css-intro.html">CSS: Introduction</a></li>
-      <li><a href="css-selectors.html">CSS: Selectors</a></li>
-      <li><a href="css-properties.html">CSS: Properties</a></li>
-      <li><a href="css-colors-units.html">CSS: Colors & Units</a></li>
-      <li><a href="css-box-model.html">CSS: Box Model</a></li>
-      <li><a href="css-text.html">CSS: Text Styling</a></li>
-      <li><a href="css-backgrounds.html">CSS: Backgrounds</a></li>
-      <li><a href="css-borders.html">CSS: Borders & Border Radius</a></li>
-      <li><a href="css-layout.html">CSS: Layout</a></li>
-      <li><a href="css-display-position.html">CSS: Display & Positioning</a></li>
-      <li><a href="css-responsive.html">CSS: Responsive Design</a></li>
-      <li><a href="css-transitions.html">CSS: Transitions & Animations</a></li>
-      <li><a href="css-pseudo.html">CSS: Pseudo-classes & Pseudo-elements</a></li>
-    </ul>
-  </nav>
-  <section>
-    <h2>What is the Box Model?</h2>
-    <p>The CSS box model describes the rectangular boxes generated for elements in the document tree. It consists of:</p>
-    <ul>
-      <li><strong>Content:</strong> The actual content of the box (e.g., text, images).</li>
-      <li><strong>Padding:</strong> Space between the content and the border.</li>
-      <li><strong>Border:</strong> A border surrounding the padding (or content if no padding).</li>
-      <li><strong>Margin:</strong> Space between the border and other elements.</li>
-    </ul>
-  </section>
-  <section>
-    <h2>Example: Box Model</h2>
-    <pre>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="css-intro.html">CSS: Introduction</a></li>
+            <li><a href="css-selectors.html">CSS: Selectors</a></li>
+            <li><a href="css-properties.html">CSS: Properties</a></li>
+            <li><a href="css-colors-units.html">CSS: Colors & Units</a></li>
+            <li><a href="css-box-model.html">CSS: Box Model</a></li>
+            <li><a href="css-text.html">CSS: Text Styling</a></li>
+            <li><a href="css-backgrounds.html">CSS: Backgrounds</a></li>
+            <li><a href="css-borders.html">CSS: Borders & Border Radius</a></li>
+            <li><a href="css-layout.html">CSS: Layout</a></li>
+            <li><a href="css-display-position.html">CSS: Display & Positioning</a></li>
+            <li><a href="css-responsive.html">CSS: Responsive Design</a></li>
+            <li><a href="css-transitions.html">CSS: Transitions & Animations</a></li>
+            <li><a href="css-pseudo.html">CSS: Pseudo-classes & Pseudo-elements</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>What is the Box Model?</h2>
+        <p>The CSS box model describes the rectangular boxes generated for elements in the document tree. It consists
+            of:</p>
+        <ul>
+            <li><strong>Content:</strong> The actual content of the box (e.g., text, images).</li>
+            <li><strong>Padding:</strong> Space between the content and the border.</li>
+            <li><strong>Border:</strong> A border surrounding the padding (or content if no padding).</li>
+            <li><strong>Margin:</strong> Space between the border and other elements.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Example: Box Model</h2>
+        <pre>
 /* Example */
 div {
     width: 200px;
@@ -50,41 +51,41 @@ div {
     margin: 10px;
 }
         </pre>
-    <p>This example creates a box with content, padding, border, and margin.</p>
-  </section>
-  <section>
-    <h2>Box-Sizing Property</h2>
-    <p>The <code>box-sizing</code> property controls how the width and height of an element are calculated:</p>
-    <ul>
-      <li><strong>content-box:</strong> Default value. Width and height include only the content.</li>
-      <li><strong>border-box:</strong> Width and height include content, padding, and border.</li>
-    </ul>
-    <pre>
+        <p>This example creates a box with content, padding, border, and margin.</p>
+    </section>
+    <section>
+        <h2>Box-Sizing Property</h2>
+        <p>The <code>box-sizing</code> property controls how the width and height of an element are calculated:</p>
+        <ul>
+            <li><strong>content-box:</strong> Default value. Width and height include only the content.</li>
+            <li><strong>border-box:</strong> Width and height include content, padding, and border.</li>
+        </ul>
+        <pre>
 /* Example */
 div {
     box-sizing: border-box;
 }
         </pre>
-    <p>This example ensures the total width and height include padding and border.</p>
-  </section>
-  <section>
-    <h2>Practice</h2>
-    <p>Try experimenting with the box model:</p>
-    <ul>
-      <li>Adjust padding, border, and margin values to see their effects.</li>
-      <li>Use <code>box-sizing: border-box</code> for consistent layouts.</li>
-      <li>Combine box model properties with responsive design techniques.</li>
-    </ul>
-  </section>
-  <section>
-    <h2>Continue Learning</h2>
-    <ul>
-      <li><a href="css-text.html">Next: CSS Text Styling</a></li>
-    </ul>
-  </section>
+        <p>This example ensures the total width and height include padding and border.</p>
+    </section>
+    <section>
+        <h2>Practice</h2>
+        <p>Try experimenting with the box model:</p>
+        <ul>
+            <li>Adjust padding, border, and margin values to see their effects.</li>
+            <li>Use <code>box-sizing: border-box</code> for consistent layouts.</li>
+            <li>Combine box model properties with responsive design techniques.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Continue Learning</h2>
+        <ul>
+            <li><a href="css-text.html">Next: CSS Text Styling</a></li>
+        </ul>
+    </section>
 </main>
 <footer>
-  <p>&copy; 2025 Intro to HTML &amp; CSS by Md Ahbab Hamid Khan</p>
+    <p>&copy; 2025 Intro to HTML &amp; CSS by Md Ahbab Hamid Khan</p>
 </footer>
 </body>
 </html>
