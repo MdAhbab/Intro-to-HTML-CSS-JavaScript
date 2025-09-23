@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CSS: Box Model</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <header>
     <h1>CSS: Box Model</h1>
     <p>Learn how the CSS box model works and how to style elements effectively.</p>
 </header>
-<main>
+<main id="main">
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -27,6 +30,7 @@
             <li><a href="css-responsive.html">CSS: Responsive Design</a></li>
             <li><a href="css-transitions.html">CSS: Transitions & Animations</a></li>
             <li><a href="css-pseudo.html">CSS: Pseudo-classes & Pseudo-elements</a></li>
+            <li><a href="js-intro.html">JS: Introduction</a></li>
         </ul>
     </nav>
     <section>
@@ -83,9 +87,21 @@ div {
             <li><a href="css-text.html">Next: CSS Text Styling</a></li>
         </ul>
     </section>
+    <!-- Quick Check Quiz -->
+    <section class="container quiz">
+        <h2>Quick Check</h2>
+        <p>Which part of the box model is the space between the content and the border?</p>
+        <form data-answer="padding">
+            <label for="q-cssbox-1" class="visually-hidden">Your answer</label>
+            <input id="q-cssbox-1" type="text" placeholder="Type your answer" autocomplete="off">
+            <button type="submit">Check</button>
+        </form>
+        <p class="feedback" aria-live="polite"></p>
+    </section>
 </main>
 <footer>
     <p>&copy; 2025 Intro to HTML &amp; CSS by Md Ahbab Hamid Khan</p>
 </footer>
+<script src="site.js" defer></script>
 </body>
 </html>

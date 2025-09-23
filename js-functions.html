@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript: Functions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+    <h1>JavaScript: Functions</h1>
+    <p>Reusable blocks of code. Parameters in, results out.</p>
+    <nav class="container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="js-intro.html">JS: Introduction</a></li>
+            <li><a href="js-variables.html">JS: Variables &amp; Types</a></li>
+            <li><a href="js-arrays.html">JS: Arrays</a></li>
+            <li><a href="js-objects.html">JS: Objects</a></li>
+            <li><a href="js-loops.html">JS: Loops</a></li>
+            <li><a href="js-control-flow.html">JS: Control Flow</a></li>
+            <li><a href="js-functions.html" class="active">JS: Functions</a></li>
+            <li><a href="js-dom-events.html">JS: DOM &amp; Events</a></li>
+        </ul>
+    </nav>
+</header>
+<main id="main">
+    <section>
+        <h2>Defining functions</h2>
+        <pre><code>// Declaration (hoisted)
+function add(a, b) {
+  return a + b;
+}
+
+// Expression
+const multiply = function (a, b) {
+  return a * b;
+};
+
+// Arrow function
+const greet = (name = 'friend') => `Hello, ${name}!`;
+
+console.log(add(2, 3));        // 5
+console.log(multiply(2, 3));   // 6
+console.log(greet('Ahbab'));   // Hello, Ahbab!
+</code></pre>
+    </section>
+    <section>
+        <h2>Parameters and scope</h2>
+        <pre><code>let message = 'global';
+
+function demo(param) {
+  const local = 'local';
+  console.log(message, param, local);
+}
+
+demo('value');
+// console.log(local); // ❌ ReferenceError: local is not defined
+</code></pre>
+    </section>
+    <section>
+        <h2>Practice</h2>
+        <ol>
+            <li>Write a <code>sum</code> function that sums an array of numbers.</li>
+            <li>Create a function that formats a user's full name from first/last.</li>
+            <li>Convert a declaration to an arrow function.</li>
+        </ol>
+    </section>
+    <section>
+        <h2>Next up</h2>
+        <ul>
+            <li><a href="js-dom-events.html">DOM & Events</a></li>
+        </ul>
+    </section>
+    <!-- Quick Check Quiz -->
+    <section class="container quiz">
+        <h2>Quick Check</h2>
+        <p>What keyword immediately returns a value from a function?</p>
+        <form data-answer="return">
+            <label for="q-jsfunc-1" class="visually-hidden">Your answer</label>
+            <input id="q-jsfunc-1" type="text" placeholder="Type your answer" autocomplete="off">
+            <button type="submit">Check</button>
+        </form>
+        <p class="feedback" aria-live="polite"></p>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2025 Intro to HTML, CSS &amp; JS by Md Ahbab Hamid Khan</p>
+</footer>
+<script src="site.js" defer></script>
+</body>
+</html>

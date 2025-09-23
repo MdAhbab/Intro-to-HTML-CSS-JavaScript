@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CSS: Colors & Units</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <header>
     <h1>CSS: Colors & Units</h1>
     <p>Learn how to use colors and measurement units in CSS to style your web pages.</p>
 </header>
-<main>
+<main id="main">
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -27,6 +30,7 @@
             <li><a href="css-responsive.html">CSS: Responsive Design</a></li>
             <li><a href="css-transitions.html">CSS: Transitions & Animations</a></li>
             <li><a href="css-pseudo.html">CSS: Pseudo-classes & Pseudo-elements</a></li>
+            <li><a href="js-intro.html">JS: Introduction</a></li>
         </ul>
     </nav>
     <section>
@@ -84,9 +88,21 @@ h1 {
             <li><a href="css-box-model.html">Next: CSS Box Model</a></li>
         </ul>
     </section>
+    <!-- Quick Check Quiz -->
+    <section class="container quiz">
+        <h2>Quick Check</h2>
+        <p>Which color function includes an alpha (transparency) channel?</p>
+        <form data-answer="rgba|rgba()">
+            <label for="q-csscolor-1" class="visually-hidden">Your answer</label>
+            <input id="q-csscolor-1" type="text" placeholder="Type your answer" autocomplete="off">
+            <button type="submit">Check</button>
+        </form>
+        <p class="feedback" aria-live="polite"></p>
+    </section>
 </main>
 <footer>
     <p>&copy; 2025 Intro to HTML &amp; CSS by Md Ahbab Hamid Khan</p>
 </footer>
+<script src="site.js" defer></script>
 </body>
 </html>

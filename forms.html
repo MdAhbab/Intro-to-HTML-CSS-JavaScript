@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Creating Forms in HTML - Intro to HTML & CSS</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <!-- Site Header -->
 <header>
     <h1>Creating Forms in HTML</h1>
@@ -15,7 +18,7 @@
     </p>
 </header>
 
-<main>
+<main id="main">
     <!-- Navigation Menu -->
     <nav>
         <ul>
@@ -27,9 +30,10 @@
             <li><a href="forms.html">Forms</a></li>
             <li><a href="tables.html">Tables</a></li>
             <li><a href="links.html">Links</a></li>
+            <li><a href="js-intro.html">Start Learning JavaScript →</a></li>
         </ul>
     </nav>
-
+    
     <!-- Introduction to Forms -->
     <article>
         <h2>What is the &lt;form&gt; Element?</h2>
@@ -136,11 +140,24 @@
             <li><a href="images.html">Previous: Adding Images to Your Page</a></li>
         </ul>
     </section>
+
+    <!-- Quick Check Quiz -->
+    <section class="container quiz">
+        <h2>Quick Check</h2>
+        <p>Which HTML element is used to label an input for accessibility?</p>
+        <form data-answer="label">
+            <label for="q-forms-1" class="visually-hidden">Your answer</label>
+            <input id="q-forms-1" type="text" placeholder="Type your answer" autocomplete="off">
+            <button type="submit">Check</button>
+        </form>
+        <p class="feedback" aria-live="polite"></p>
+    </section>
 </main>
 
 <!-- Site Footer -->
 <footer>
     <p>&copy; 2025 Intro to HTML &amp; CSS by Md Ahbab Hamid Khan</p>
 </footer>
+<script src="site.js" defer></script>
 </body>
 </html>

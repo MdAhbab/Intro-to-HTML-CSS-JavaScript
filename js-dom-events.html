@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript: DOM & Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+    <h1>JavaScript: DOM &amp; Events</h1>
+    <p>Select elements, update the page, and respond to user actions.</p>
+    <nav class="container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="js-intro.html">JS: Introduction</a></li>
+            <li><a href="js-variables.html">JS: Variables &amp; Types</a></li>
+            <li><a href="js-arrays.html">JS: Arrays</a></li>
+            <li><a href="js-objects.html">JS: Objects</a></li>
+            <li><a href="js-loops.html">JS: Loops</a></li>
+            <li><a href="js-control-flow.html">JS: Control Flow</a></li>
+            <li><a href="js-functions.html">JS: Functions</a></li>
+            <li><a href="js-dom-events.html" class="active">JS: DOM &amp; Events</a></li>
+        </ul>
+    </nav>
+</header>
+<main id="main">
+    <section>
+        <h2>Selecting elements</h2>
+        <pre><code>const title = document.querySelector('h1');
+title.textContent = 'Updated Title via JS';
+</code></pre>
+    </section>
+    <section>
+        <h2>Handling events</h2>
+        <p>Try this interactive example:</p>
+    <div class="container demo-box">
+            <label for="name">Your name</label><br>
+            <input id="name" class="input-wide" placeholder="Type your name">
+            <button id="greetBtn">Greet</button>
+            <p id="output" aria-live="polite"></p>
+        </div>
+        <pre><code>const input = document.getElementById('name');
+const btn = document.getElementById('greetBtn');
+const out = document.getElementById('output');
+
+btn.addEventListener('click', () => {
+  const value = input.value.trim();
+  out.textContent = value ? `Hello, ${value}!` : 'Please enter your name.';
+});
+</code></pre>
+    </section>
+    <section>
+        <h2>Practice ideas</h2>
+        <ul>
+            <li>Build a simple counter with + and − buttons.</li>
+            <li>Create a todo list where you can add and remove items.</li>
+            <li>Toggle a dark mode class on the <code>body</code> when clicking a switch.</li>
+        </ul>
+    </section>
+    
+    <!-- Quick Check Quiz -->
+    <section class="container quiz">
+        <h2>Quick Check</h2>
+        <p>Which method attaches an event handler to an element?</p>
+        <form data-answer="addeventlistener">
+            <label for="q-jsdom-1" class="visually-hidden">Your answer</label>
+            <input id="q-jsdom-1" type="text" placeholder="Type the method name (e.g., addEventListener)" autocomplete="off">
+            <button type="submit">Check</button>
+        </form>
+        <p class="feedback" aria-live="polite"></p>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2025 Intro to HTML, CSS &amp; JS by Md Ahbab Hamid Khan</p>
+</footer>
+<script>
+// Small interactive demo (kept inline for teaching visibility)
+const input = document.getElementById('name');
+const btn = document.getElementById('greetBtn');
+const out = document.getElementById('output');
+if (btn) {
+  btn.addEventListener('click', () => {
+    const value = (input?.value || '').trim();
+    out.textContent = value ? `Hello, ${value}!` : 'Please enter your name.';
+  });
+}
+</script>
+<script src="site.js" defer></script>
+</body>
+</html>

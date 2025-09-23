@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript: Introduction</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+    <h1>JavaScript: Introduction</h1>
+    <p>Learn what JavaScript is, how it runs in the browser, and how we'll use it in this course.</p>
+    <nav class="container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="js-intro.html" class="active">JS: Introduction</a></li>
+            <li><a href="js-variables.html">JS: Variables &amp; Types</a></li>
+            <li><a href="js-arrays.html">JS: Arrays</a></li>
+            <li><a href="js-objects.html">JS: Objects</a></li>
+            <li><a href="js-loops.html">JS: Loops</a></li>
+            <li><a href="js-control-flow.html">JS: Control Flow</a></li>
+            <li><a href="js-functions.html">JS: Functions</a></li>
+            <li><a href="js-dom-events.html">JS: DOM &amp; Events</a></li>
+        </ul>
+    </nav>
+ </header>
+<main id="main">
+    <section>
+        <h2>What is JavaScript?</h2>
+        <p>
+            JavaScript is the programming language of the web. It lets you add interactivity to HTML pages, respond to
+            user actions, update the DOM, fetch data, and much more.
+        </p>
+        <p>
+            In the browser, JavaScript runs in the <em>main thread</em> alongside the rendering engine. You write code
+            in <code>&lt;script&gt;</code> tags or separate <code>.js</code> files and the browser executes it.
+        </p>
+    </section>
+    <section>
+        <h2>A very short history of JavaScript</h2>
+        <p>
+            JavaScript was created by Brendan Eich in 1995 at Netscape in about 10 days. Standardized as ECMAScript (ES)
+            by ECMA, the language matured through ES3 (1999), ES5 (2009), and the big ES2015 (ES6) update with classes,
+            modules, and more. Since then, JS evolves yearly, adding features like async/await, optional chaining, and
+            modern standard library improvements.
+        </p>
+    </section>
+    <section>
+        <h2>Hello, JavaScript</h2>
+        <p>Open your browser devtools (F12) and try typing this in the Console:</p>
+        <pre><code>console.log('Hello, JavaScript!');</code></pre>
+        <p>Or embed it in a page:</p>
+        <pre><code>&lt;script&gt;
+console.log('Hello from a script tag');
+&lt;/script&gt;</code></pre>
+    </section>
+    <section>
+        <h2>Where we'll go next</h2>
+        <ul>
+            <li><a href="js-variables.html">Variables & Types</a></li>
+            <li><a href="js-control-flow.html">Control Flow</a></li>
+            <li><a href="js-functions.html">Functions</a></li>
+            <li><a href="js-dom-events.html">DOM & Events</a></li>
+        </ul>
+    </section>
+    
+    <!-- Quick Check Quiz -->
+    <section class="container quiz">
+        <h2>Quick Check</h2>
+        <p>What does JS stand for?</p>
+        <form data-answer="javascript">
+            <label for="q-jsi-1" class="visually-hidden">Your answer</label>
+            <input id="q-jsi-1" type="text" placeholder="Type your answer" autocomplete="off">
+            <button type="submit">Check</button>
+        </form>
+        <p class="feedback" aria-live="polite"></p>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2025 Intro to HTML, CSS &amp; JS by Md Ahbab Hamid Khan</p>
+ </footer>
+<script src="site.js" defer></script>
+</body>
+</html>

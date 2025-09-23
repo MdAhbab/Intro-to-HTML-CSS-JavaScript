@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Summary - Intro to HTML & CSS</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <header>
     <h1>Summary of Topics</h1>
     <p>
@@ -13,7 +16,7 @@
         quick overview and links to each section.
     </p>
 </header>
-<main>
+<main id="main">
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -25,6 +28,7 @@
             <li><a href="tables.html">Tables</a></li>
             <li><a href="links.html">Links</a></li>
             <li><a href="css-intro.html">CSS: Introduction</a></li>
+            <li><a href="js-intro.html">JS: Introduction</a></li>
         </ul>
     </nav>
     <section>
@@ -73,6 +77,16 @@
         </ul>
     </section>
     <section>
+        <h2>JavaScript Topics Covered</h2>
+        <ul>
+            <li><strong><a href="js-intro.html">Introduction to JavaScript</a></strong>: What JS is and where it runs.</li>
+            <li><strong><a href="js-variables.html">Variables &amp; Types</a></strong>: let/const, primitives vs objects.</li>
+            <li><strong><a href="js-control-flow.html">Control Flow</a></strong>: conditionals, loops, truthy/falsy.</li>
+            <li><strong><a href="js-functions.html">Functions</a></strong>: declarations, expressions, arrows, scope.</li>
+            <li><strong><a href="js-dom-events.html">DOM &amp; Events</a></strong>: selecting, updating, handling events.</li>
+        </ul>
+    </section>
+    <section>
         <h2>Practice Suggestions</h2>
         <p>
             Use the knowledge gained from this series to build projects such as:
@@ -91,9 +105,21 @@
             <li><a href="index.html">Back to Home</a></li>
         </ul>
     </section>
+    <!-- Quick Check Quiz -->
+    <section class="container quiz">
+        <h2>Quick Check</h2>
+        <p>Which CSS concept explains content, padding, border, and margin as one model?</p>
+        <form data-answer="box model">
+            <label for="q-summary-1" class="visually-hidden">Your answer</label>
+            <input id="q-summary-1" type="text" placeholder="Type your answer" autocomplete="off">
+            <button type="submit">Check</button>
+        </form>
+        <p class="feedback" aria-live="polite"></p>
+    </section>
 </main>
 <footer>
     <p>&copy; 2025 Intro to HTML &amp; CSS by Md Ahbab Hamid Khan</p>
 </footer>
+<script src="site.js" defer></script>
 </body>
 </html>

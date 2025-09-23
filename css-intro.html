@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Introduction to CSS - Intro to HTML & CSS</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <header>
     <h1>Introduction to CSS</h1>
     <p>Learn how to style your web pages using CSS (Cascading Style Sheets).</p>
 </header>
-<main>
+<main id="main">
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -44,6 +47,14 @@ body {
         <p>This example sets the background color and font for the entire page.</p>
     </section>
     <section>
+        <h2>A very short history of CSS</h2>
+        <p>
+            CSS was proposed in 1996 by Håkon Wium Lie to separate content from presentation. CSS2 (1998) added media
+            types and positioning. CSS3 broke features into modular specs, enabling faster evolution of parts like
+            Flexbox (2012+), Grid (2017), and more. Modern CSS focuses on layout, responsiveness, and accessibility.
+        </p>
+    </section>
+    <section>
         <h2>CSS Topics Covered</h2>
         <ul>
             <li><a href="css-intro.html">Introduction to CSS</a></li>
@@ -65,13 +76,13 @@ body {
     <section>
         <h2>CSS Reference Image</h2>
         <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
-             alt="CSS Logo" style="width: 20%; height: auto;">
+             alt="CSS Logo" class="img-small">
     </section>
     <section>
         <h2>Learn CSS on YouTube</h2>
-        <iframe width="400" height="225"
-                src="https://www.youtube.com/embed/videoseries?list=PL4cUxeGkcC9gQeDH6xYhmO-db2mhoTSrT"
-                title="CSS Crash Course For Beginners" frameborder="0" allowfullscreen></iframe>
+    <iframe class="embed-16x9"
+        src="https://www.youtube.com/embed/videoseries?list=PL4cUxeGkcC9gQeDH6xYhmO-db2mhoTSrT"
+        title="CSS Crash Course For Beginners" allowfullscreen></iframe>
         <p>
             <a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQeDH6xYhmO-db2mhoTSrT" target="_blank"
                rel="noopener noreferrer">
@@ -85,9 +96,22 @@ body {
             <li><a href="css-selectors.html">Next: CSS Selectors</a></li>
         </ul>
     </section>
+    
+    <!-- Quick Check Quiz -->
+    <section class="container quiz">
+        <h2>Quick Check</h2>
+        <p>What does CSS stand for?</p>
+        <form data-answer="cascading style sheets">
+            <label for="q-css-1" class="visually-hidden">Your answer</label>
+            <input id="q-css-1" type="text" placeholder="Type the full form" autocomplete="off">
+            <button type="submit">Check</button>
+        </form>
+        <p class="feedback" aria-live="polite"></p>
+    </section>
 </main>
 <footer>
     <p>&copy; 2025 Intro to HTML &amp; CSS by Md Ahbab Hamid Khan</p>
 </footer>
+<script src="site.js" defer></script>
 </body>
 </html>

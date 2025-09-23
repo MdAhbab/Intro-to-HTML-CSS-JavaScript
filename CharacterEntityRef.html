@@ -2,31 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Character Entity References</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
+ </head>
 <body>
-<h1>Don't be afraid to be &lt; then a 100% success &amp &gt; more:</h1>
-<p>Here are some character entity references:</p>
-<ul>
-    <li>&amp; - Ampersand</li>
-    <li>&lt; - Less than</li>
-    <li>&gt; - Greater than</li>
-    <li>&quot; - Double quote</li>
-    <li>&#39; - Single quote</li>
-    <li>&nbsp; - Non-breaking space</li>
-    <li>&copy; - Copyright symbol</li>
-    <li>&reg; - Registered trademark symbol</li>
-    <li>&euro; - Euro sign</li>
-    <li>&pound; - British pound sign</li>
-    "Far and away the best prize that life has to offer is the chance to work hard at work worth doing. In the face of
-    adversity, it is not the critic who counts, nor the man who points out how the strong man stumbles, or where the
-    doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, whose face is
-    marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there
-    is no effort without error and shortcoming; but who does actually strive to do the deeds; who knows great
-    enthusiasms, the great devotions; who spends himself in a worthy cause; who at the best knows in the end the triumph
-    of high achievement, and who at the worst, if he fails, at least&nbsp;fails&nbsp;while&nbsp;daring greatly." -
-    Theodore Roosevelt
-
-</ul>
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+    <h1>Character Entity References</h1>
+    <p>Safely display special characters in HTML using named and numeric entities.</p>
+</header>
+<main id="main">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lists.html">Lists</a></li>
+            <li><a href="css-intro.html">CSS</a></li>
+            <li><a href="js-intro.html">JS: Introduction</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Examples</h2>
+        <ul>
+            <li>&amp;amp; — Ampersand</li>
+            <li>&amp;lt; — Less than</li>
+            <li>&amp;gt; — Greater than</li>
+            <li>&amp;quot; — Double quote</li>
+            <li>&amp;#39; — Single quote</li>
+            <li>&amp;nbsp; — Non-breaking space</li>
+            <li>&amp;copy; — Copyright symbol</li>
+            <li>&amp;reg; — Registered trademark symbol</li>
+            <li>&amp;euro; — Euro sign</li>
+            <li>&amp;pound; — British pound sign</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Why use entities?</h2>
+        <p>Some characters have special meaning in HTML. Entities let you display them without confusing the parser.</p>
+        <p>For example: Don&apos;t be afraid to be &lt; than 100% success &amp; &gt; more.</p>
+    </section>
+    <section>
+        <h2>Famous quote</h2>
+        <blockquote>
+            <p>Far and away the best prize that life has to offer is the chance to work hard at work worth doing. In the face of adversity, it is not the critic who counts, nor the man who points out how the strong man stumbles, or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause; who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least&nbsp;fails&nbsp;while&nbsp;daring greatly.</p>
+            <footer>— Theodore Roosevelt</footer>
+        </blockquote>
+    </section>
+    <!-- Quick Check Quiz -->
+    <section class="container quiz">
+        <h2>Quick Check</h2>
+        <p>Which named entity is used for an ampersand? (type only the name without &amp; and ;)</p>
+        <form data-answer="amp">
+            <label for="q-entities-1" class="visually-hidden">Your answer</label>
+            <input id="q-entities-1" type="text" placeholder="Type your answer" autocomplete="off">
+            <button type="submit">Check</button>
+        </form>
+        <p class="feedback" aria-live="polite"></p>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2025 Intro to HTML, CSS &amp; JS by Md Ahbab Hamid Khan</p>
+</footer>
+<script src="site.js" defer></script>
 </body>
 </html>

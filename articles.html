@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Understanding the &lt;article&gt; Element - Intro to HTML & CSS</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <!-- Site Header -->
 <header>
     <h1>Understanding the &lt;article&gt; Element</h1>
@@ -15,7 +18,7 @@
     </p>
 </header>
 
-<main>
+<main id="main">
     <!-- Navigation Menu -->
     <nav>
         <ul>
@@ -27,6 +30,7 @@
             <li><a href="forms.html">Forms</a></li>
             <li><a href="tables.html">Tables</a></li>
             <li><a href="links.html">Links</a></li>
+            <li><a href="js-intro.html">Start Learning JavaScript →</a></li>
         </ul>
     </nav>
 
@@ -102,11 +106,24 @@
             <li><a href="lists.html">Previous: Understanding HTML Lists</a></li>
         </ul>
     </section>
+
+    <!-- Quick Check Quiz -->
+    <section class="container quiz">
+        <h2>Quick Check</h2>
+        <p>The &lt;article&gt; element is used for a self-contained piece of content that can be reused independently. True or False?</p>
+        <form data-answer="true">
+            <label for="q-article-1" class="visually-hidden">Your answer</label>
+            <input id="q-article-1" type="text" placeholder="Type true or false" autocomplete="off">
+            <button type="submit">Check</button>
+        </form>
+        <p class="feedback" aria-live="polite"></p>
+    </section>
 </main>
 
 <!-- Site Footer -->
 <footer>
     <p>&copy; 2025 Intro to HTML &amp; CSS by Md Ahbab Hamid Khan</p>
 </footer>
+<script src="site.js" defer></script>
 </body>
 </html>

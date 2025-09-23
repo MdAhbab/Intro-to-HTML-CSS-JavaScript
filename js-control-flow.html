@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript: Control Flow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+    <h1>JavaScript: Control Flow</h1>
+    <p>Decide what runs using conditionals and loops.</p>
+    <nav class="container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="js-intro.html">JS: Introduction</a></li>
+            <li><a href="js-variables.html">JS: Variables &amp; Types</a></li>
+            <li><a href="js-arrays.html">JS: Arrays</a></li>
+            <li><a href="js-objects.html">JS: Objects</a></li>
+            <li><a href="js-loops.html">JS: Loops</a></li>
+            <li><a href="js-control-flow.html" class="active">JS: Control Flow</a></li>
+            <li><a href="js-functions.html">JS: Functions</a></li>
+            <li><a href="js-dom-events.html">JS: DOM &amp; Events</a></li>
+        </ul>
+    </nav>
+</header>
+<main id="main">
+    <section>
+        <h2>Conditionals</h2>
+        <pre><code>const score = 85;
+
+if (score >= 90) {
+  console.log('A');
+} else if (score >= 80) {
+  console.log('B');
+} else {
+  console.log('C or below');
+}
+
+const result = score >= 60 ? 'pass' : 'fail';
+console.log(result);
+</code></pre>
+    </section>
+    <section>
+        <h2>Loops</h2>
+        <pre><code>// for
+for (let i = 0; i < 3; i++) {
+  console.log(i);
+}
+
+// while
+let n = 3;
+while (n > 0) {
+  console.log(n);
+  n--;
+}
+
+// for..of (arrays/iterables)
+for (const tag of ['html','css','js']) {
+  console.log(tag);
+}
+</code></pre>
+    </section>
+    <section>
+        <h2>Truthy and Falsy</h2>
+        <p>Falsy values: <code>false, 0, '', null, undefined, NaN</code>. Everything else is truthy.</p>
+        <pre><code>const input = '';
+if (!input) {
+  console.log('Please provide a value');
+}
+</code></pre>
+    </section>
+    <section>
+        <h2>Next up</h2>
+        <ul>
+            <li><a href="js-functions.html">Functions</a></li>
+        </ul>
+    </section>
+  <!-- Quick Check Quiz -->
+  <section class="container quiz">
+    <h2>Quick Check</h2>
+    <p>Which operator chooses between two values based on a condition, like a compact if/else?</p>
+    <form data-answer="ternary">
+      <label for="q-jscf-1" class="visually-hidden">Your answer</label>
+      <input id="q-jscf-1" type="text" placeholder="Type your answer" autocomplete="off">
+      <button type="submit">Check</button>
+    </form>
+    <p class="feedback" aria-live="polite"></p>
+  </section>
+</main>
+<footer>
+    <p>&copy; 2025 Intro to HTML, CSS &amp; JS by Md Ahbab Hamid Khan</p>
+</footer>
+<script src="site.js" defer></script>
+</body>
+</html>

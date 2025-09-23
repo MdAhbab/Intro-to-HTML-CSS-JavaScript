@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Building Tables - Intro to HTML & CSS</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <!-- Site Header -->
 <header>
     <h1>Building Tables</h1>
@@ -15,7 +18,7 @@
     </p>
 </header>
 
-<main>
+<main id="main">
     <!-- Navigation Menu -->
     <nav>
         <ul>
@@ -29,7 +32,6 @@
             <li><a href="links.html">Links</a></li>
         </ul>
     </nav>
-
     <!-- Introduction to Tables -->
     <article>
         <h2>What is the &lt;table&gt; Element?</h2>
@@ -131,11 +133,24 @@
             <li><a href="forms.html">Previous: Creating Forms in HTML</a></li>
         </ul>
     </section>
+
+    <!-- Quick Check Quiz -->
+    <section class="container quiz">
+        <h2>Quick Check</h2>
+        <p>Which element is used for header cells in a table?</p>
+        <form data-answer="th">
+            <label for="q-tables-1" class="visually-hidden">Your answer</label>
+            <input id="q-tables-1" type="text" placeholder="Type the element name" autocomplete="off">
+            <button type="submit">Check</button>
+        </form>
+        <p class="feedback" aria-live="polite"></p>
+    </section>
 </main>
 
 <!-- Site Footer -->
 <footer>
     <p>&copy; 2025 Intro to HTML &amp; CSS by Md Ahbab Hamid Khan</p>
 </footer>
+<script src="site.js" defer></script>
 </body>
 </html>

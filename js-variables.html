@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript: Variables & Types</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+    <h1>JavaScript: Variables &amp; Types</h1>
+    <p>Understand <code>let</code>, <code>const</code>, and data types you'll use every day.</p>
+    <nav class="container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="js-intro.html">JS: Introduction</a></li>
+            <li><a href="js-variables.html" class="active">JS: Variables &amp; Types</a></li>
+            <li><a href="js-arrays.html">JS: Arrays</a></li>
+            <li><a href="js-objects.html">JS: Objects</a></li>
+            <li><a href="js-loops.html">JS: Loops</a></li>
+            <li><a href="js-control-flow.html">JS: Control Flow</a></li>
+            <li><a href="js-functions.html">JS: Functions</a></li>
+            <li><a href="js-dom-events.html">JS: DOM &amp; Events</a></li>
+        </ul>
+    </nav>
+</header>
+<main id="main">
+    <section>
+        <h2>Declaring variables</h2>
+        <ul>
+            <li><strong>let</strong>: block-scoped, reassignable</li>
+            <li><strong>const</strong>: block-scoped, not reassignable (but objects/arrays are still mutable)</li>
+        </ul>
+        <pre><code>let count = 0;
+count = count + 1; // ok
+
+const siteName = 'Intro Blog';
+// siteName = 'Other' // ❌ TypeError: Assignment to constant variable.
+</code></pre>
+    </section>
+    <section>
+        <h2>Common types</h2>
+        <ul>
+            <li>number, string, boolean, null, undefined, object, symbol, bigint</li>
+        </ul>
+        <pre><code>const age = 21;                  // number
+const name = 'Ahbab';            // string
+const isStudent = true;          // boolean
+const nothing = null;            // null
+let notSet;                      // undefined
+const user = { id: 1, name }     // object
+const tags = ['html', 'css'];    // array (also an object)
+
+console.log(typeof age);         // 'number'
+console.log(typeof user);        // 'object'
+</code></pre>
+    </section>
+    <section>
+        <h2>Practice</h2>
+        <ol>
+            <li>Declare a <code>const</code> for your name and a <code>let</code> for a counter; increment it.</li>
+            <li>Create an object describing a course with <code>title</code>, <code>hours</code>, and <code>tags</code>.</li>
+            <li>Log the <code>typeof</code> different variables.</li>
+        </ol>
+    </section>
+    <section>
+        <h2>Next up</h2>
+        <ul>
+            <li><a href="js-control-flow.html">Control Flow</a></li>
+        </ul>
+    </section>
+    <!-- Quick Check Quiz -->
+    <section class="container quiz">
+        <h2>Quick Check</h2>
+        <p>Which keyword declares a block-scoped constant?</p>
+        <form data-answer="const">
+            <label for="q-jsvar-1" class="visually-hidden">Your answer</label>
+            <input id="q-jsvar-1" type="text" placeholder="Type your answer" autocomplete="off">
+            <button type="submit">Check</button>
+        </form>
+        <p class="feedback" aria-live="polite"></p>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2025 Intro to HTML, CSS &amp; JS by Md Ahbab Hamid Khan</p>
+</footer>
+<script src="site.js" defer></script>
+</body>
+</html>

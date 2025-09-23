@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JavaScript: Loops</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+  <h1>JavaScript: Loops</h1>
+  <p>Repeat work with for, while, and modern iteration patterns.</p>
+  <nav class="container">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="js-intro.html">JS: Introduction</a></li>
+      <li><a href="js-variables.html">JS: Variables &amp; Types</a></li>
+      <li><a href="js-arrays.html">JS: Arrays</a></li>
+      <li><a href="js-objects.html">JS: Objects</a></li>
+      <li><a href="js-loops.html"class="active">JS: Loops</a></li>
+      <li><a href="js-control-flow.html">JS: Control Flow</a></li>
+      <li><a href="js-functions.html">JS: Functions</a></li>
+      <li><a href="js-dom-events.html">JS: DOM &amp; Events</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+  <section class="container">
+    <h2>for</h2>
+    <pre><code>for (let i = 0; i &lt; 3; i++) {
+  console.log(i);
+}</code></pre>
+  </section>
+
+  <section class="container">
+    <h2>while / do…while</h2>
+    <pre><code>let n = 0;
+while (n &lt; 3) {
+  n++;
+}
+
+let k = 0;
+do {
+  k++;
+} while (k &lt; 3);</code></pre>
+  </section>
+
+  <section class="container">
+    <h2>for…of vs for…in</h2>
+    <ul>
+      <li><strong>for…of</strong>: values of an iterable (arrays, strings, maps)</li>
+      <li><strong>for…in</strong>: keys of an object (enumerable properties)</li>
+    </ul>
+    <pre><code>const arr = ['a','b','c'];
+for (const v of arr) console.log(v); // 'a','b','c'
+
+const obj = { a:1, b:2 };
+for (const k in obj) console.log(k); // 'a','b'</code></pre>
+  </section>
+
+  <section class="container">
+    <h2>break and continue</h2>
+    <pre><code>for (let i = 0; i &lt; 10; i++) {
+  if (i === 5) break;     // stop loop
+  if (i % 2 === 0) continue; // skip even
+  console.log(i);
+}</code></pre>
+  </section>
+
+  <section class="container">
+    <h2>Practice</h2>
+    <ol>
+      <li>Sum numbers 1–100 with a loop.</li>
+      <li>Iterate an array with <code>for…of</code> and build a new string.</li>
+      <li>Loop object keys with <code>for…in</code> and log key-value pairs.</li>
+    </ol>
+  </section>
+
+  <section class="container">
+    <h2>Next up</h2>
+    <ul>
+      <li><a href="js-control-flow.html">Control Flow</a></li>
+    </ul>
+  </section>
+
+  <!-- Quick Check Quiz -->
+  <section class="container quiz">
+    <h2>Quick Check</h2>
+    <p>Which loop iterates over the values of an array?</p>
+    <form data-answer="for...of|for of|for-of">
+      <label for="q-jsloops-1" class="visually-hidden">Your answer</label>
+      <input id="q-jsloops-1" type="text" placeholder="Type your answer" autocomplete="off" />
+      <button type="submit">Check</button>
+    </form>
+    <p class="feedback" aria-live="polite"></p>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2025 Intro to HTML, CSS &amp; JS by Md Ahbab Hamid Khan</p>
+</footer>
+<script src="site.js" defer></script>
+</body>
+</html>

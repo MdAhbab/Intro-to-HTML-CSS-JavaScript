@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CSS: Properties</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <header>
     <h1>CSS: Properties</h1>
     <p>Learn about the various CSS properties used to style HTML elements.</p>
 </header>
-<main>
+<main id="main">
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -27,6 +30,7 @@
             <li><a href="css-responsive.html">CSS: Responsive Design</a></li>
             <li><a href="css-transitions.html">CSS: Transitions & Animations</a></li>
             <li><a href="css-pseudo.html">CSS: Pseudo-classes & Pseudo-elements</a></li>
+            <li><a href="js-intro.html">JS: Introduction</a></li>
         </ul>
     </nav>
     <section>
@@ -75,9 +79,21 @@ div {
             <li><a href="css-colors-units.html">Next: CSS Colors & Units</a></li>
         </ul>
     </section>
+    <!-- Quick Check Quiz -->
+    <section class="container quiz">
+        <h2>Quick Check</h2>
+        <p>Which CSS property sets the space inside an element?</p>
+        <form data-answer="padding">
+            <label for="q-cssprops-1" class="visually-hidden">Your answer</label>
+            <input id="q-cssprops-1" type="text" placeholder="Type your answer" autocomplete="off">
+            <button type="submit">Check</button>
+        </form>
+        <p class="feedback" aria-live="polite"></p>
+    </section>
 </main>
 <footer>
     <p>&copy; 2025 Intro to HTML &amp; CSS by Md Ahbab Hamid Khan</p>
 </footer>
+<script src="site.js" defer></script>
 </body>
 </html>

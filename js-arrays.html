@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JavaScript: Arrays</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header>
+  <h1>JavaScript: Arrays</h1>
+  <p>Store ordered lists of values, transform them with methods, and iterate efficiently.</p>
+  <nav class="container">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="js-intro.html">JS: Introduction</a></li>
+      <li><a href="js-variables.html">JS: Variables &amp; Types</a></li>
+      <li><a href="js-arrays.html" class="active">JS: Arrays</a></li>
+      <li><a href="js-objects.html">JS: Objects</a></li>
+      <li><a href="js-loops.html">JS: Loops</a></li>
+      <li><a href="js-control-flow.html">JS: Control Flow</a></li>
+      <li><a href="js-functions.html">JS: Functions</a></li>
+      <li><a href="js-dom-events.html">JS: DOM &amp; Events</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+  <section class="container">
+    <h2>Creating arrays</h2>
+    <pre><code>// Literal
+const tags = ['html', 'css', 'js'];
+
+// From values
+const numbers = Array.of(1, 2, 3);
+
+// From iterable / array-like
+const letters = Array.from('abc'); // ['a','b','c']</code></pre>
+  </section>
+
+  <section class="container">
+    <h2>Common methods</h2>
+    <ul>
+      <li><code>push</code>/<code>pop</code>: add/remove end</li>
+      <li><code>unshift</code>/<code>shift</code>: add/remove start</li>
+      <li><code>map</code>, <code>filter</code>, <code>reduce</code>: transform</li>
+      <li><code>slice</code> (no mutate) vs <code>splice</code> (mutate)</li>
+      <li><code>includes</code>, <code>indexOf</code>, <code>find</code></li>
+    </ul>
+    <pre><code>const nums = [1, 2, 3];
+nums.push(4);          // [1,2,3,4]
+const doubled = nums.map(n =&gt; n * 2); // [2,4,6,8]
+const evens = nums.filter(n =&gt; n % 2 === 0); // [2,4]</code></pre>
+  </section>
+
+  <section class="container">
+    <h2>Iteration</h2>
+    <pre><code>const list = ['a','b','c'];
+
+// Index-based
+for (let i = 0; i &lt; list.length; i++) {
+  console.log(i, list[i]);
+}
+
+// Values
+for (const value of list) {
+  console.log(value);
+}
+
+// forEach
+list.forEach((v, i) =&gt; console.log(i, v));</code></pre>
+  </section>
+
+  <section class="container">
+    <h2>Immutable patterns</h2>
+    <pre><code>const a = [1, 2, 3];
+
+// Add without mutating 'a'
+const b = [...a, 4];       // [1,2,3,4]
+const c = a.concat(4, 5);  // [1,2,3,4,5]
+
+// Remove without mutating
+const withoutFirst = a.slice(1); // [2,3]</code></pre>
+  </section>
+
+  <section class="container">
+    <h2>Practice</h2>
+    <ol>
+      <li>Create an array of 5 numbers; build a new array with each number squared.</li>
+      <li>From <code>['css','html','js']</code>, return only items containing <code>j</code>.</li>
+      <li>Add an item to the end without mutating the original.</li>
+    </ol>
+  </section>
+
+  <section class="container">
+    <h2>Next up</h2>
+    <ul>
+      <li><a href="js-objects.html">Objects</a></li>
+    </ul>
+  </section>
+
+  <!-- Quick Check Quiz -->
+  <section class="container quiz">
+    <h2>Quick Check</h2>
+    <p>Which method adds an item to the end of an array?</p>
+    <form data-answer="push|push()">
+      <label for="q-jsarrays-1" class="visually-hidden">Your answer</label>
+      <input id="q-jsarrays-1" type="text" placeholder="Type your answer" autocomplete="off" />
+      <button type="submit">Check</button>
+    </form>
+    <p class="feedback" aria-live="polite"></p>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2025 Intro to HTML, CSS &amp; JS by Md Ahbab Hamid Khan</p>
+</footer>
+<script src="site.js" defer></script>
+</body>
+</html>

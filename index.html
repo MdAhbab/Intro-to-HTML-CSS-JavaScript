@@ -2,20 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Intro to HTML & CSS</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
 </head>
 <body>
-<!-- Site Header -->
+<a class="skip-link" href="#main">Skip to content</a>
+<!-- Modern hero header -->
 <header>
-    <h1>Intro to HTML &amp; CSS</h1>
-    <p>
-        Welcome! I'm Ahbab, and in this blog I will try show you the essentials of HTML and CSS from scratch.
-        Follow along to gain practical web development skills.
-    </p>
-    <nav class ="container">
+    <div class="container hero">
+        <div class="hero-content">
+            <span class="eyebrow">Beginner-friendly curriculum</span>
+            <h1>Learn HTML, CSS &amp; JavaScript the right way</h1>
+            <p>Short, clear lessons with examples and tiny practice ideas. Build solid fundamentals and ship your first pages fast.</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="css-intro.html">Start with CSS</a>
+                <a class="btn btn-ghost" href="js-intro.html">Or jump to JavaScript</a>
+            </div>
+        </div>
+        <img class="hero-image" src="Ahbab.jpg" alt="Author portrait or course splash"/>
+    </div>
+    <nav class="container">
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="lists.html">Lists</a></li>
             <li><a href="articles.html">Articles</a></li>
             <li><a href="sections.html">Sections</a></li>
@@ -23,88 +33,50 @@
             <li><a href="forms.html">Forms</a></li>
             <li><a href="tables.html">Tables</a></li>
             <li><a href="links.html">Links</a></li>
-            <li><a href="css-intro.html">Start Learning CSS &rarr;</a></li>
+            <li><a href="css-intro.html">CSS Topics →</a></li>
+            <li><a href="js-intro.html">JavaScript Topics →</a></li>
         </ul>
     </nav>
 </header>
 
 <!-- Main Blog Content -->
-<main>
-    <!-- Introduction Article -->
-    <article>
-        <h2>Getting Started</h2>
-        <p>
-            This blog is your basic guide to building web pages using HTML and CSS.
-            Each section below is a core part of the learning path, with detailed explanations and examples.
-        </p>
-    </article>
-    <!-- We need the nav tag to create a navigation menu -->
-
-        <!-- History Section -->
-        <section>
-            <h2>The History of HTML &amp; CSS</h2>
-            <p>
-                <!--we are using strong for bold-->
-                <strong>HTML</strong> (HyperText Markup Language) was created by Tim Berners-Lee in 1991 to structure
-                documents on the World Wide Web. Over time, HTML has evolved to support multimedia, interactivity, and
-                semantic markup.
-            </p>
-            <p>
-                <strong>CSS</strong> (Cascading Style Sheets) was introduced in 1996 by Håkon Wium Lie to separate
-                content
-                from presentation, making it easier to style and layout web pages.
-            </p>
-        </section>
-
-        <!-- Why Learn Section -->
-        <section>
-            <h2>Why Learn HTML &amp; CSS in the 21st Century?</h2>
-            <ul id="bordered-list">
-                <li>HTML and CSS are the building blocks of the web.</li>
-                <li>They allow you to create structured, styled, and interactive web pages.</li>
-                <li>Understanding these technologies is essential for any web developer or designer.</li>
-                <li>They are the foundation of all web development and design.</li>
-                <li>Empower yourself to create and customize your own websites.</li>
-                <li>Essential for careers in tech, marketing, design, and more.</li>
-                <li>Web literacy is crucial in today's digital world.</li>
-                <li>Share your ideas and information globally.</li>
-            </ul>
-        </section>
-
-        <!-- Example Scenario Section -->
-        <section>
-            <h2>Example Scenario</h2>
-            <p>
-                Imagine you want to create a personal portfolio website to showcase your projects and skills. With HTML,
-                you
-                can structure your content, and with CSS, you can style it to reflect your personality and
-                professionalism.
-                By the end of this blog, you'll have the knowledge to start building your own site!
-            </p>
-        </section>
-
-        <!-- Example Projects Section -->
-        <section>
-            <h2>Practice Projects</h2>
-            <ol>
-                <li>
-                    <strong>Project 1: Personal Bio Page</strong>
-                    <br>
-                    Create a simple web page about yourself. Include your name, a photo, a short bio, a list of your
-                    hobbies, and links to your social profiles.
-                </li>
-                <li>
-                    <strong>Project 2: Favorite Books List</strong>
-                    <br>
-                    Build a web page listing your favorite books. Use different types of lists, add images of book
-                    covers,
-                    and organize the content using sections and articles.
-                </li>
-            </ol>
-        </section>
+<main id="main">
+    <!-- Highlights -->
+    <section class="container">
+        <h2>What you'll build</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <h3>Semantic HTML</h3>
+                <p>Structure content with lists, articles, sections, images, forms, tables and links.</p>
+                <ul>
+                    <li><a href="lists.html">Lists</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="sections.html">Sections</a></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Modern CSS</h3>
+                <p>Styling fundamentals, layout, responsive design and tasteful effects.</p>
+                <ul>
+                    <li><a href="css-intro.html">CSS Intro</a></li>
+                    <li><a href="css-layout.html">Layout</a></li>
+                    <li><a href="css-responsive.html">Responsive</a></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>JavaScript basics</h3>
+                <p>Variables, control flow, functions, and DOM interactions to bring pages to life.</p>
+                <ul>
+                    <li><a href="js-intro.html">JS Intro</a></li>
+                    <li><a href="js-variables.html">Variables</a></li>
+                    <li><a href="js-dom-events.html">DOM & Events</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
         <!-- Core Content Navigation -->
-        <section>
+        <section class="container">
             <h2>Course Contents</h2>
             <ul>
                 <li>
@@ -142,7 +114,35 @@
                 <li>
                     <a href="CharacterEntityRef.html"> Learn about the Character entity references.</a>
                 </li>
+                <li>
+                    <a href="js-intro.html">Introduction to JavaScript</a>
+                    <!-- New section: start learning JS fundamentals -->
+                </li>
+                <li>
+                    <a href="js-variables.html">JavaScript Variables & Types</a>
+                </li>
+                <li>
+                    <a href="js-control-flow.html">JavaScript Control Flow</a>
+                </li>
+                <li>
+                    <a href="js-functions.html">JavaScript Functions</a>
+                </li>
+                <li>
+                    <a href="js-dom-events.html">JavaScript DOM & Events</a>
+                </li>
             </ul>
+        </section>
+        
+        <!-- Quick Check Quiz -->
+        <section class="container quiz">
+            <h2>Quick Check</h2>
+            <p>What does JS stand for?</p>
+            <form data-answer="javascript">
+                <label for="q-js-1" class="visually-hidden">Your answer</label>
+                <input id="q-js-1" type="text" placeholder="Type your answer" autocomplete="off">
+                <button type="submit">Check</button>
+            </form>
+            <p class="feedback" aria-live="polite"></p>
         </section>
 </main>
 
@@ -150,5 +150,6 @@
 <footer>
     <p>&copy; 2025 Intro to HTML &amp; CSS by Md Ahbab Hamid Khan</p>
 </footer>
+<script src="site.js" defer></script>
 </body>
 </html>

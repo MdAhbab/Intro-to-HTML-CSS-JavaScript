@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Structuring with &lt;section&gt; - Intro to HTML & CSS</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <!-- Site Header -->
 <header>
     <h1>Structuring with &lt;section&gt;</h1>
@@ -15,7 +18,7 @@
     </p>
 </header>
 
-<main>
+<main id="main">
     <!-- Navigation Menu -->
     <nav>
         <ul>
@@ -27,6 +30,7 @@
             <li><a href="forms.html">Forms</a></li>
             <li><a href="tables.html">Tables</a></li>
             <li><a href="links.html">Links</a></li>
+            <li><a href="js-intro.html">Start Learning JavaScript →</a></li>
         </ul>
     </nav>
 
@@ -105,11 +109,24 @@
             <li><a href="articles.html">Previous: Using the &lt;article&gt; Element</a></li>
         </ul>
     </section>
+
+    <!-- Quick Check Quiz -->
+    <section class="container quiz">
+        <h2>Quick Check</h2>
+        <p>The &lt;section&gt; element groups content by a common theme. True or False?</p>
+        <form data-answer="true">
+            <label for="q-section-1" class="visually-hidden">Your answer</label>
+            <input id="q-section-1" type="text" placeholder="Type true or false" autocomplete="off">
+            <button type="submit">Check</button>
+        </form>
+        <p class="feedback" aria-live="polite"></p>
+    </section>
 </main>
 
 <!-- Site Footer -->
 <footer>
     <p>&copy; 2025 Intro to HTML &amp; CSS by Md Ahbab Hamid Khan</p>
 </footer>
+<script src="site.js" defer></script>
 </body>
 </html>

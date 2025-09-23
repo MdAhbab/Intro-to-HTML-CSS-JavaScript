@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CSS: Borders & Border Radius</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <header>
     <h1>CSS: Borders & Border Radius</h1>
     <p>Learn how to style borders and create rounded corners using CSS.</p>
 </header>
-<main>
+<main id="main">
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -27,6 +30,7 @@
             <li><a href="css-responsive.html">CSS: Responsive Design</a></li>
             <li><a href="css-transitions.html">CSS: Transitions & Animations</a></li>
             <li><a href="css-pseudo.html">CSS: Pseudo-classes & Pseudo-elements</a></li>
+            <li><a href="js-intro.html">JS: Introduction</a></li>
         </ul>
     </nav>
     <section>
@@ -77,9 +81,21 @@ div {
             <li><a href="css-layout.html">Next: CSS Layout</a></li>
         </ul>
     </section>
+    <!-- Quick Check Quiz -->
+    <section class="container quiz">
+        <h2>Quick Check</h2>
+        <p>Which property creates rounded corners on elements?</p>
+        <form data-answer="border-radius">
+            <label for="q-cssborder-1" class="visually-hidden">Your answer</label>
+            <input id="q-cssborder-1" type="text" placeholder="Type your answer" autocomplete="off">
+            <button type="submit">Check</button>
+        </form>
+        <p class="feedback" aria-live="polite"></p>
+    </section>
 </main>
 <footer>
     <p>&copy; 2025 Intro to HTML &amp; CSS by Md Ahbab Hamid Khan</p>
 </footer>
+<script src="site.js" defer></script>
 </body>
 </html>
