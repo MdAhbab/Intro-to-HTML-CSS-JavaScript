@@ -30,9 +30,10 @@ npx serve . -l 5500
 
 ## Site structure
 
-- Root folder contains all HTML lessons and `styles.css` used site-wide.
-- CSS topics live across pages like `css-intro.html`, `css-layout.html`, etc.
-- New JavaScript section uses separate pages: `js-intro.html`, `js-variables.html`, `js-control-flow.html`, `js-functions.html`, `js-dom-events.html`.
+- Root folder contains the `index.html` entry point, `styles.css`, and `site.js`.
+- All lesson pages (e.g. `css-intro.html`, `js-intro.html`, `forms.html`) are nicely organized inside the `pages/` folder.
+- CSS has been upgraded to feature modern aesthetics (glassmorphism, updated typography, vibrant color palettes, subtle animations) while remaining accessible and well-documented for learning.
+- JavaScript has been streamlined for cross-folder navigation and robust validation.
 
 ## Contributing or extending
 

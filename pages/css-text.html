@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CSS: Properties</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>CSS: Text Styling</title>
+    <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="data:,">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header>
-    <h1>CSS: Properties</h1>
-    <p>Learn about the various CSS properties used to style HTML elements.</p>
+    <h1>CSS: Text Styling</h1>
+    <p>Learn how to style text in CSS to enhance the appearance of your web pages.</p>
 </header>
 <main id="main">
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="css-intro.html">CSS: Introduction</a></li>
             <li><a href="css-selectors.html">CSS: Selectors</a></li>
             <li><a href="css-properties.html">CSS: Properties</a></li>
@@ -34,58 +34,58 @@
         </ul>
     </nav>
     <section>
-        <h2>Common CSS Properties</h2>
-        <p>CSS properties allow you to control the appearance and layout of HTML elements:</p>
+        <h2>Text Styling Properties</h2>
+        <p>CSS provides various properties to style text:</p>
         <ul>
-            <li><strong>color:</strong> Sets the text color.</li>
-            <li><strong>background-color:</strong> Sets the background color.</li>
+            <li><strong>font-family:</strong> Specifies the font of the text.</li>
             <li><strong>font-size:</strong> Sets the size of the text.</li>
-            <li><strong>margin:</strong> Sets the space outside an element.</li>
-            <li><strong>padding:</strong> Sets the space inside an element.</li>
-            <li><strong>border:</strong> Sets the border around an element.</li>
-            <li><strong>width:</strong> Sets the width of an element.</li>
-            <li><strong>height:</strong> Sets the height of an element.</li>
+            <li><strong>font-weight:</strong> Controls the boldness of the text.</li>
+            <li><strong>text-align:</strong> Aligns text horizontally (e.g., left, center, right).</li>
+            <li><strong>text-decoration:</strong> Adds decoration (e.g., underline, line-through).</li>
+            <li><strong>line-height:</strong> Sets the spacing between lines.</li>
+            <li><strong>letter-spacing:</strong> Adjusts the spacing between letters.</li>
+            <li><strong>word-spacing:</strong> Adjusts the spacing between words.</li>
         </ul>
     </section>
     <section>
-        <h2>Example: CSS Properties</h2>
+        <h2>Example: Text Styling</h2>
         <pre>
 /* Example */
-div {
-    color: white;
-    background-color: black;
-    font-size: 16px;
-    margin: 10px;
-    padding: 20px;
-    border: 2px solid red;
-    width: 300px;
-    height: 150px;
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    word-spacing: 5px;
 }
         </pre>
-        <p>This example demonstrates how to use various CSS properties to style a <code>div</code> element.</p>
+        <p>This example styles an <code>h1</code> element with various text properties.</p>
     </section>
     <section>
         <h2>Practice</h2>
-        <p>Try experimenting with CSS properties:</p>
+        <p>Try experimenting with text styling:</p>
         <ul>
-            <li>Change the <code>color</code> and <code>background-color</code> of elements.</li>
-            <li>Adjust <code>margin</code> and <code>padding</code> values to see their effects.</li>
-            <li>Set <code>width</code> and <code>height</code> for different elements.</li>
+            <li>Change the <code>font-family</code> to a custom font.</li>
+            <li>Adjust the <code>line-height</code> to improve readability.</li>
+            <li>Use <code>text-align</code> to center-align a paragraph.</li>
         </ul>
     </section>
     <section>
         <h2>Continue Learning</h2>
         <ul>
-            <li><a href="css-colors-units.html">Next: CSS Colors & Units</a></li>
+            <li><a href="css-backgrounds.html">Next: CSS Backgrounds</a></li>
         </ul>
     </section>
     <!-- Quick Check Quiz -->
     <section class="container quiz">
         <h2>Quick Check</h2>
-        <p>Which CSS property sets the space inside an element?</p>
-        <form data-answer="padding">
-            <label for="q-cssprops-1" class="visually-hidden">Your answer</label>
-            <input id="q-cssprops-1" type="text" placeholder="Type your answer" autocomplete="off">
+        <p>Which property controls the spacing between lines of text?</p>
+        <form data-answer="line-height">
+            <label for="q-csstext-1" class="visually-hidden">Your answer</label>
+            <input id="q-csstext-1" type="text" placeholder="Type your answer" autocomplete="off">
             <button type="submit">Check</button>
         </form>
         <p class="feedback" aria-live="polite"></p>
@@ -94,6 +94,6 @@ div {
 <footer>
     <p>&copy; 2025 Intro to HTML &amp; CSS by Md Ahbab Hamid Khan</p>
 </footer>
-<script src="site.js" defer></script>
+<script src="../site.js" defer></script>
 </body>
 </html>
